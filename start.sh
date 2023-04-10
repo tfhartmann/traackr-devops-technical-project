@@ -1,11 +1,26 @@
 #!/bin/bash
 
 MINIKUBE_CMD=$(which minikube) # todo: make this fail when it doesn't exit with a useful error
+HELM_CMD=$(which helm) #todo: Make this fail if it's not found
 
-# todo: If minikube status does not equal 0 - start er up 
-$MINIKUBE_CMD start
+if ! $($MINIKUBE_CMD status) ; then
+  $MINIKUBE_CMD start
+fi
+
 $MINIKUBE_CMD addons enable ingress
 $MINIKUBE_CMD addons enable ingress-dns
 
-# todo: check to see if hello-world.local is already an entry 
-#echo '127.0.0.1       hello-world.local' | sudo tee -a /etc/hosts
+if ! $(helm test hello-world-chart) ; then
+  $HELM_CMD install hello-world-chart hello-world-app/
+fi
+
+if ! $(helm test traefik) ; then
+  $HELM_CMD install traefik traefik/traefik
+fi
+
+if ! $(grep "hello-world.local" /etc/hosts); then
+  echo '127.0.0.1       hello-world.local' | sudo tee -a /etc/hosts
+fi 
+echo "Remember to clean up your /etc/hosts file after running this script" 
+
+$MINIKUBE_CMD tunnel

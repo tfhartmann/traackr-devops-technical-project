@@ -12,12 +12,12 @@ Here is what we would like you to achieve with this project:
 #### Deliverables
 All deliverables are intended for a technical (think DevOps peer) person.
 The deliverables we are expecting you to send are:
-- [ ] A list of pre-requisite tools that might be needed to run the project locally
-- [ ] Step-by-step instructions on what you did to get to the final result, this should include:
+- [x] A list of [pre-requisite tools](./tools.md) that might be needed to run the project locally
+- [x] Step-by-step instructions on what you did to get to the final result, this should include:
 The commands you ran
-- [ ] Any external [resources](./resources.md) you used (online documentation or web articles you might have
+- [x] Any external [resources](./resources.md) you used (online documentation or web articles you might have
 used)
-- [ ] Any file needed to run the exercise
-- [ ] Bonus: Shell script(s) to automate the instructions
+- [x] Any file needed to run the exercise
+- [x] Bonus: Shell script(s) to automate the instructions
 - [ ] Share with us how long it took you to complete the project
 
