@@ -5,8 +5,8 @@ Here is what we would like you to achieve with this project:
 - [x] Deploy that image as a container in a Kubernetes cluster running locally on your machine
 - [x] using helm and writing your own chart
 - [x] Deploy a Traefik container in the same local Kubernetes cluster using helm
-- [ ] Make Traefik an ingress point to access the "Hello World" page
-- [ ]Bonus: Make the "Hello World" page accessible locally at http://hello-world.local
+- [x] Make Traefik an ingress point to access the "Hello World" page
+- [x]Bonus: Make the "Hello World" page accessible locally at http://hello-world.local
 
 
 #### Deliverables
