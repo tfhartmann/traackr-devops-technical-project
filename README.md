@@ -3,11 +3,18 @@
 While this will work, it's worth calling out that `.local` is a reserver top level domain and makes [ingress DNS](https://minikube.sigs.k8s.io/docs/handbook/addons/ingress-dns/) with Minikube a bit dodgy, they recomend using a different domain. 
 
 
-By Default the helm chart uses an image from tfhartmann/hello-world:1 
+By Default the helm chart image tfhartmann/hello-world:1 which is a public image in my personal docker repo. 
+
+This project took me a couple of hours call it 3 or 4, both `helm` and `traefik` were new to me, so I spent a bit of time reading the docs. 
+
+Additional docs can be found under `docs/` and should align with the expected output. `resources.md` is a bit stream of consiousness, all the docs could use some cleanup, but they should be functional. 
 
 #### On A Mac 
 
+##### Scripted 
+running the start.sh script in the root of this repo will install and run this demo. It does require that you have Docker installed and running, but otherwise should install and configure everything else.  The script require input in the form of the sudo password, and does update `/etc/hosts` so please clean that up after you've run it :smile: 
 
+##### Manual 
 * Install [homebrew](https://brew.sh/)  
 
 ```Shell

@@ -9,7 +9,7 @@ For This exercice I used
 * Created the `public-html` in my IDE, this could have been done with `mkdir public-html`
     * Created an `index.html` file in my IDE, this could have been done with `touch public-html/index.hmtl`
 * Populated `index.html` with the string `Hello World`
-* Build a local Docker image `docker build -t hello-world .` 
+* Build a local Docker image `docker build -t tfhartmann/hello-world .` 
 * Start the Image `docker run -dit --name hello-world-app -p 8080:80 hello-world`
     * Test to see if you can connect with `curl localhost:8080` you should also be able to browse to http://localhost:8080/
 * Once done, stop your test container and remove it with `docker stop hello-world-app ;docker rm hello-world-app`
@@ -39,5 +39,4 @@ Helm
 
 
 
-`helm upgrade --dry-run hello-world-chart hello-world-app/ --values hello-world-app/values.yaml `
 

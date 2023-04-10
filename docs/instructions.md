@@ -6,7 +6,7 @@ Here is what we would like you to achieve with this project:
 - [x] using helm and writing your own chart
 - [x] Deploy a Traefik container in the same local Kubernetes cluster using helm
 - [x] Make Traefik an ingress point to access the "Hello World" page
-- [x]Bonus: Make the "Hello World" page accessible locally at http://hello-world.local
+- [x] Bonus: Make the "Hello World" page accessible locally at http://hello-world.local
 
 
 #### Deliverables
@@ -19,5 +19,5 @@ The commands you ran
 used)
 - [x] Any file needed to run the exercise
 - [x] Bonus: Shell script(s) to automate the instructions
-- [ ] Share with us how long it took you to complete the project
+- [x] Share with us how long it took you to complete the project
 
